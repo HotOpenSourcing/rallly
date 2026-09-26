@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "portless run --name landing.rallly sh -c 'NEXT_PUBLIC_BASE_URL=$PORTLESS_URL DEV_DOMAIN=${PORTLESS_URL#https://} TAILWIND_MODE=watch pnpm exec next dev --turbopack'",
-    "build": "next build",
+    "dev": "node init && portless run --name landing.rallly sh -c 'NEXT_PUBLIC_BASE_URL=$PORTLESS_URL DEV_DOMAIN=${PORTLESS_URL#https://} TAILWIND_MODE=watch pnpm exec next dev --turbopack'",
+    "build": "node init && next build",
     "analyze": "cross-env ANALYZE=true next build",
-    "start": "next start",
+    "start": "node init && next start",
     "type-check": "tsc --pretty --noEmit",
     "i18n:scan": "i18next-cli extract"
   },

@@ -23,7 +23,6 @@ node_modules
 npm-debug.log*
 
 # local env files
-.env
 .env*.local
 
 # ts
@@ -52,3 +51,4 @@ next-env.d.ts
 .claude/launch.json
 # Radix -> Base UI migration reports (local skill state)
 .migration/
+config.bat
